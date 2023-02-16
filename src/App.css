@@ -1,0 +1,111 @@
+
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+label {
+  font-size: 20px;
+  margin: 8px;
+
+}
+
+.input {
+  width: 250px;
+  height: 25px;
+}
+
+input {
+  font-size: 16px;
+}
+.row{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.chart2_tag{
+  margin: 20px;
+  font-weight: 800;
+}
+.back_button{
+  display: flex;
+  margin-top: 29px;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.worker_list {
+  width: 540px;
+  margin: 10px;
+}
+.chart2{
+  height: 300px;
+  width: 800px;
+}
+.pic{
+  max-width: 200px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.worker_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  justify-items: center; 
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.phone-picture {
+  height: 540px;
+  width: 750px;
+  object-fit: contain;
+}
+
+.phone-container {
+  background-color: white;
+  width: 750px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 24%) 1px 2px 13px;
+  text-align: center;
+
+}
+
+.phone-name {
+  padding: 16px;
+  font-size: 48px;
+  margin-bottom: 0px;
+
+  /* font-weight: bold; */
+}
+
+.phone-company {
+  /* padding: 16px; */
+  font-size: 32px;
+  color: grey;
+  /* font-weight: bold; */
+  margin-top: 0px;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: Roboto;
+  margin: 16px;
+}
+
+.phone-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 24px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  margin: 0 auto ;
+}
