@@ -1,16 +1,21 @@
-import  {TextField} from "@mui/material";
+import  {Card, TextField} from "@mui/material";
 import {Button} from "@mui/material";
 import { useFormik } from "formik";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { CardContent } from "semantic-ui-react";
 import * as yup from 'yup';
 import { API_URL } from "./global1";
 function Home() {
     return (
-        <div>
+        <div className='worker_container'>
+            <Card className='worker_list'>
+                <CardContent>
             <h1>Welcom to the Website🙋❤️👩‍💻</h1>
             <h1 style={{color:"blue"}}>Login or Sign in to enter the page</h1>
             {/* <LoginForm/> */}
+            </CardContent>
+            </Card>
         </div>
     );
 }
@@ -22,7 +27,7 @@ const movieValidationShema = yup.object({
     const [formState,setFormState]=useState("success");
     const navigate=useNavigate();
     const {handleChange,values,handleSubmit,handleBlur, touched, errors}=useFormik({
-        initialValues:{username:"prakash",password:"12345678"},
+        initialValues:{username:"",password:""},
         validationSchema: movieValidationShema,
         onSubmit:async(values)=>{
             console.log(values);
@@ -50,7 +55,7 @@ const movieValidationShema = yup.object({
     return(
         <div >
             <form onSubmit={handleSubmit} className="login-form" >
-                <h2>Login/<Link to={"/signin"}>Sign in</Link></h2>
+                <h2>Login/<Link to={"/signin"}>Sign Up</Link></h2>
             <TextField 
             id="outlined-basic" 
             label="Username"
