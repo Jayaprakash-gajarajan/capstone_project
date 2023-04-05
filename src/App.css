@@ -47,6 +47,14 @@ input {
   border-radius: 50%;
   border: 1px solid black;
 }
+.eye{
+  position: absolute;
+  right:18%;
+  top:43.8%;
+  left:60%;
+  width: 15px;
+ 
+}
 .worker_container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

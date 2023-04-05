@@ -7,11 +7,24 @@ import { useState } from "react";
 import { Link} from "react-router-dom";
 import * as yup from 'yup';
 import { API_URL } from './global1';
+import {FaEye, FaEyeSlash} from 'react-icons/fa'
 const movieValidationShema = yup.object({
     username: yup.string().required(),
     password:yup.string().required().min(8),
   })
 function Signin() {
+    const handleToggle=()=>{
+        if(passwordType==="password"){
+          setPasswordType("text");
+          setPasswordIcon(<FaEye/>)
+        }
+        else{
+          setPasswordType("password");
+          setPasswordIcon(<FaEyeSlash/>)
+        }
+      }
+          const [passwordType,setPasswordType]=useState("password");
+          const [passwordIcon,setPasswordIcon]=useState(<FaEyeSlash/>);
     const [formState,setFormState]=useState("success");
     const navigate=useNavigate();
     const {handleChange,values,handleSubmit,handleBlur, touched, errors}=useFormik({
@@ -44,7 +57,7 @@ function Signin() {
   return (
     <div>
       <form onSubmit={handleSubmit} className="login-form" >
-                <h2>SIGN UP</h2>
+                <h2 style={{marginTop:"20px"}}>SIGN UP</h2>
             <TextField 
             id="outlined-basic" 
             label="Username"
@@ -56,6 +69,7 @@ function Signin() {
              /> 
 {touched.username && errors.username ? errors.username : null}
            <TextField id="outlined-basic"
+           type={passwordType}
             label="Password" 
             variant="outlined" 
             onChange={handleChange} 
@@ -63,6 +77,7 @@ function Signin() {
             onBlur={handleBlur}
             name="password"
             />   
+             <span className="eye" onClick={handleToggle}>{passwordIcon}</span>
  {touched.password && errors.password ? errors.password : null}
             <Button  color={formState}
             type="submit" variant="contained">
