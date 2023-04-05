@@ -33,9 +33,14 @@ input {
   align-items: flex-start;
   margin-left: 50px;
 }
+.img_home{
+  width: 1200px;
+  height: 100vh; 
+}
 
 .worker_list {
-  width: 540px;
+  width: 1200px;
+  height: 100vh;
   margin: 10px;
 }
 .chart2{

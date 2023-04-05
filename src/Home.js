@@ -12,9 +12,9 @@ function Home() {
         <div className='worker_container'>
             <Card className='worker_list'>
                 <CardContent>
-            <h1>Welcom to the Website🙋❤️👩‍💻</h1>
-            <h1 style={{color:"blue"}}>Login or Sign in to enter the page</h1>
-            {/* <LoginForm/> */}
+                {/* <h1>Welcome</h1>
+            <h1 style={{color:"blue"}}>Login or Sign in to view this site</h1> */}
+            <img src="https://tse3.mm.bing.net/th?id=OIP.AH4rtp2mJRcoNBnhLzjE1wHaEK&pid=Api&P=0" className="img_home"></img>
             </CardContent>
             </Card>
         </div>
