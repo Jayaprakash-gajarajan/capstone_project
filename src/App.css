@@ -34,14 +34,18 @@ input {
   margin-left: 50px;
 }
 .img_home{
+ 
   width: 1200px;
   height: 100vh; 
 }
-
+.worker_lists{
+width: 1200px;
+height: 100vh;
+}
 .worker_list {
-  width: 1200px;
+  width: 540px;
   height: 100vh;
-  margin: 10px;
+  margin: 0px;
 }
 .chart2{
   height: 300px;
