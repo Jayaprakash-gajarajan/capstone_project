@@ -10,7 +10,7 @@ import {FaEye, FaEyeSlash} from 'react-icons/fa'
 function Home() {
     return (
         <div className='worker_container'>
-            <Card className='worker_list'>
+            <Card className='worker_lists'>
                 <CardContent>
                 {/* <h1>Welcome</h1>
             <h1 style={{color:"blue"}}>Login or Sign in to view this site</h1> */}
