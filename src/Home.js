@@ -95,7 +95,7 @@ const movieValidationShema = yup.object({
                 {formState ==="error"?"Retry":"Login"}
                 </Button>
             </form>
-            <Button onClick={()=>logout()}>Sign Out</Button>
+            <Button onClick={()=>logout()}>Logout</Button>
         </div>
     )
 }
