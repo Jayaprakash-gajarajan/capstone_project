@@ -10,7 +10,7 @@ import {FaEye, FaEyeSlash} from 'react-icons/fa'
 function Home() {
     return (
         <div className='home_container'>
-            <img src="https://tse3.mm.bing.net/th?id=OIP.AH4rtp2mJRcoNBnhLzjE1wHaEK&pid=Api&P=0" className="img_home"></img>
+            {/* <img src="https://tse3.mm.bing.net/th?id=OIP.AH4rtp2mJRcoNBnhLzjE1wHaEK&pid=Api&P=0" className="img_home"></img> */}
         </div>
     );
 }

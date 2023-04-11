@@ -1,10 +1,20 @@
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 .App {
   text-align: center;
-  height: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.home_container{
+  background-image: url("https://tse3.mm.bing.net/th?id=OIP.AH4rtp2mJRcoNBnhLzjE1wHaEK&pid=Api&P=0");
+  min-width:100vw;
+  min-height: 100vh; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 label {
@@ -35,10 +45,13 @@ input {
   align-items: flex-start;
   margin-left: 50px;
 }
-.img_home{
-  width: 1232px;
-  height: 100vh; 
-}
+/* .img_home{
+  position: fixed;
+  min-width:100%;
+  min-height: 100vh; 
+  background-size: cover;
+  background-position: center;
+} */
 .worker_lists{
 width: 1200px;
 height: 100vh;

@@ -58,7 +58,7 @@ function App() {
               <Button color="inherit" onClick={() => navigate("/")}>Home</Button>
               <Button color="inherit" onClick={() => navigate("/workers")}>Employees List</Button>
              {roleId==0?<Button color="inherit" onClick={() => navigate("/projects")}>PROJECTS</Button>:null}
-              <Button style={{marginLeft:"auto"}} color="inherit" onClick={() => navigate("/login")}>LOGIN</Button>
+              {roleId?(<Button color="inherit" style={{marginLeft:"auto"}} onClick={()=>logout()}>LOGOUT</Button>):(<Button style={{marginLeft:"auto"}} color="inherit" onClick={() => navigate("/login")}>LOGIN</Button>)}
             </Toolbar>
           </AppBar>
     <Routes>
@@ -101,6 +101,8 @@ function ProdectedRoute({ children }) {
 }
 export function logout() {
   localStorage.removeItem("token")
+  localStorage.removeItem("roleId")
+
   window.location.href = "/";
 
 }
