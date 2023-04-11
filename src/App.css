@@ -78,7 +78,7 @@ height: 100vh;
 .eye{
   position: absolute;
   right:18%;
-  top:43.8%;
+  top:41%;
   left:60%;
   width: 15px;
 }
@@ -126,7 +126,7 @@ height: 100vh;
 body {
   background-color: whitesmoke;
   font-family: Roboto;
-  margin: 16px;
+  margin: 0px;
 }
 
 .phone-list-container {
