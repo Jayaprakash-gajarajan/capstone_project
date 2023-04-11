@@ -9,14 +9,8 @@ import { API_URL } from "./global1";
 import {FaEye, FaEyeSlash} from 'react-icons/fa'
 function Home() {
     return (
-        <div className='worker_container'>
-            <Card className='worker_lists'>
-                <CardContent>
-                {/* <h1>Welcome</h1>
-            <h1 style={{color:"blue"}}>Login or Sign in to view this site</h1> */}
+        <div className='home_container'>
             <img src="https://tse3.mm.bing.net/th?id=OIP.AH4rtp2mJRcoNBnhLzjE1wHaEK&pid=Api&P=0" className="img_home"></img>
-            </CardContent>
-            </Card>
         </div>
     );
 }
@@ -25,6 +19,7 @@ const movieValidationShema = yup.object({
     password:yup.string().required().min(8),
   })
  export function LoginForm(){
+    const roleId=localStorage.getItem("roleId");
     const handleToggle=()=>{
         if(passwordType==="password"){
           setPasswordType("text");
@@ -95,7 +90,7 @@ const movieValidationShema = yup.object({
                 {formState ==="error"?"Retry":"Login"}
                 </Button>
             </form>
-            <Button onClick={()=>logout()}>Logout</Button>
+            {roleId ?(<Button onClick={()=>logout()}>Logout</Button>):(null)}
         </div>
     )
 }

@@ -1,4 +1,7 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
   height: 100%;
@@ -7,7 +10,6 @@
 label {
   font-size: 20px;
   margin: 8px;
-
 }
 
 .input {
@@ -34,8 +36,7 @@ input {
   margin-left: 50px;
 }
 .img_home{
- 
-  width: 1200px;
+  width: 1232px;
   height: 100vh; 
 }
 .worker_lists{
@@ -51,6 +52,11 @@ height: 100vh;
   height: 300px;
   width: 800px;
 }
+.home_container{
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+}
 .pic{
   max-width: 200px;
   border-radius: 50%;
@@ -62,7 +68,6 @@ height: 100vh;
   top:43.8%;
   left:60%;
   width: 15px;
- 
 }
 .worker_container{
   display: grid;
