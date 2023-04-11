@@ -47,8 +47,6 @@ function Signin() {
             else{
                 const result= await data.json()
                 console.log("success",result);
-                localStorage.setItem("token",result.token)
-                localStorage.setItem("roleId",result.roleId)
                 navigate("/login")
             }
           
